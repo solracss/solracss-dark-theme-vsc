@@ -223,7 +223,7 @@
 		{ "name": "Meta Require", "scope": ["meta.require"], "settings": { "foreground": "#61AFEF" } },
 		{ "name": "Meta Selector", "scope": ["meta.selector"], "settings": { "foreground": "#C678DD" } },
 		{ "name": "Meta Separator", "scope": ["meta.separator"], "settings": { "foreground": "#ABB2BF" } },
-		{ "name": "Meta Tag", "scope": ["meta.tag"], "settings": { "foreground": "#ABB2BF" } },
+		{ "name": "Meta Tag", "scope": ["meta.tag"], "settings": { "foreground": "#ba3c97" } },
 		{ "name": "Underline", "scope": ["underline"], "settings": { "text-decoration": "underline" } },
 		{ "name": "None", "scope": ["none"], "settings": { "foreground": "#ABB2BF" } },
 		{
