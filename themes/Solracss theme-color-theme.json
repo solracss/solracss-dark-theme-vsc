@@ -85,6 +85,36 @@
 		"peekViewEditor.background": "#1B1D23"
 	},
 	"tokenColors": [
+		{
+			"name": "Operator, Misc",
+			"scope": [
+				"keyword.operator",
+				"keyword.control.as",
+				"punctuation",
+				"keyword.other",
+				"keyword.operator.bitwise.shift",
+				"expression.embbeded.vue punctuation.definition.tag",
+				"text.html.twig meta.tag.inline.any.html",
+				"meta.tag.template.value.twig meta.function.arguments.twig",
+				"meta.directive.vue punctuation.separator.key-value.html",
+				"punctuation.definition.constant.markdown",
+				"text.html.vue-html meta.tag",
+				"punctuation.definition.keyword",
+				"punctuation.terminator.rule",
+				"punctuation.definition.entity",
+				"punctuation.separator.inheritance.php",
+				"keyword.other.template",
+				"keyword.other.substitution",
+				"entity.name.operator",
+				"meta.property-list punctuation.separator.key-value",
+				"meta.at-rule.mixin punctuation.separator.key-value",
+				"meta.at-rule.function variable.parameter.url"
+			],
+			"settings": {
+				"foreground": "#52bcca"
+			}
+		},
+
 		{ "name": "Comment", "scope": ["comment"], "settings": { "foreground": "#5C6370", "fontStyle": "italic" } },
 		{ "name": "Comment Markup Link", "scope": ["comment markup.link"], "settings": { "foreground": "#5C6370" } },
 		{ "name": "Entity Name Type", "scope": ["entity.name.type"], "settings": { "foreground": "#E5C07B" } },
@@ -223,7 +253,13 @@
 		{ "name": "Meta Require", "scope": ["meta.require"], "settings": { "foreground": "#61AFEF" } },
 		{ "name": "Meta Selector", "scope": ["meta.selector"], "settings": { "foreground": "#C678DD" } },
 		{ "name": "Meta Separator", "scope": ["meta.separator"], "settings": { "foreground": "#ABB2BF" } },
-		{ "name": "Meta Tag", "scope": ["meta.tag"], "settings": { "foreground": "#ba3c97" } },
+		{
+			"name": "Tag Punctuation",
+			"scope": "punctuation.definition.tag",
+			"settings": {
+				"foreground": "#ba3c97"
+			}
+		},
 		{ "name": "Underline", "scope": ["underline"], "settings": { "text-decoration": "underline" } },
 		{ "name": "None", "scope": ["none"], "settings": { "foreground": "#ABB2BF" } },
 		{
