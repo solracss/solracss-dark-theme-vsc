@@ -416,7 +416,7 @@
 			"name": "CSS Tag",
 			"scope": "entity.name.tag.css",
 			"settings": {
-				"foreground": "#2ac3de"
+				"foreground": "#ae81ff"
 			}
 		},
 		{
@@ -988,6 +988,30 @@
 			}
 		},
 		{
+			"name": "CSS Font",
+			"scope": ["support.constant.font-name", "meta.definition.variable"],
+			"settings": {
+				"foreground": "#98C379"
+			}
+		},
+		{
+			"name": "CSS Class and Support",
+			"scope": [
+				"source.css support.type.property-name",
+				"source.sass support.type.property-name",
+				"source.scss support.type.property-name",
+				"source.less support.type.property-name",
+				"source.stylus support.type.property-name",
+				"source.postcss support.type.property-name",
+				"support.type.property-name.css",
+				"support.type.vendored.property-name",
+				"support.type.map.key"
+			],
+			"settings": {
+				"foreground": "#ABB2BF"
+			}
+		},
+		{
 			"name": "[VSCODE-CUSTOM] JSON Property Name",
 			"scope": "support.type.property-name.json",
 			"settings": {
@@ -1450,7 +1474,7 @@
 			"name": "[VSCODE-CUSTOM] JS/TS Meta Object Literal Key",
 			"scope": ["meta.object-literal.key.js", "meta.object-literal.key.ts"],
 			"settings": {
-				"foreground": "#E06C75"
+				"foreground": "#ABB2BF"
 			}
 		},
 		{
@@ -1618,7 +1642,7 @@
 			"name": "[VSCODE-CUSTOM] Css Support Constant Value",
 			"scope": "support.constant.property-value.css",
 			"settings": {
-				"foreground": "#ABB2BF"
+				"foreground": "#D19A66"
 			}
 		},
 		{
