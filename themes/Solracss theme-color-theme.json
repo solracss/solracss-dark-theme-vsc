@@ -116,6 +116,14 @@
 			}
 		},
 		{
+			"name": "HTML text",
+			"scope": "text.html",
+			"settings": {
+				// "foreground": "#9aa5ce"
+				"foreground": "#ABB2BF"
+			}
+		},
+		{
 			"name": "Comment",
 			"scope": ["comment"],
 			"settings": {
@@ -229,10 +237,10 @@
 			}
 		},
 		{
-			"name": "Constant Other Color",
-			"scope": ["constant.other.color"],
+			"name": "Colors",
+			"scope": ["constant.other.color", "constant.other.color.rgb-value.hex punctuation.definition.constant"],
 			"settings": {
-				"foreground": "#56B6C2"
+				"foreground": "#9aa5ce"
 			}
 		},
 		{
@@ -416,14 +424,15 @@
 			"name": "CSS Tag",
 			"scope": "entity.name.tag.css",
 			"settings": {
-				"foreground": "#ae81ff"
+				// "foreground": "#ae81ff"
+				"foreground": "#2bdbd2"
 			}
 		},
 		{
-			"name": "Entity Other Attribute Name",
-			"scope": ["entity.other.attribute-name"],
+			"name": "CSS Class",
+			"scope": ["entity.other.attribute-name.class", "meta.at-rule.mixin.scss entity.name.function.scss"],
 			"settings": {
-				"foreground": "#D19A66"
+				"foreground": "#9ece6a"
 			}
 		},
 		{
@@ -1009,6 +1018,36 @@
 			],
 			"settings": {
 				"foreground": "#ABB2BF"
+			}
+		},
+		{
+			"name": "HTML Attributes",
+			"scope": [
+				"entity.other.attribute-name",
+				"text.html.basic entity.other.attribute-name.html",
+				"text.html.basic entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#aa94d1"
+			}
+		},
+		{
+			"name": "CSS psuedo selectors",
+			"scope": [
+				"entity.other.attribute-name.pseudo-class",
+				"entity.other.attribute-name.pseudo-element",
+				"entity.other.attribute-name.placeholder",
+				"meta.property-list meta.property-value"
+			],
+			"settings": {
+				"foreground": "#bb9af7"
+			}
+		},
+		{
+			"name": "CSS Units",
+			"scope": "keyword.other.unit",
+			"settings": {
+				"foreground": "#f7768e"
 			}
 		},
 		{
