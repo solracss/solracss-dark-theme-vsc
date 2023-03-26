@@ -116,6 +116,76 @@
 			}
 		},
 		{
+			"name": "C# Keyword",
+			"scope": [
+				"keyword.other.using.cs",
+				"keyword.other.namespace.cs",
+				"keyword.other.var.cs",
+				"keyword.other.interface.cs",
+				"constant.language.null.cs",
+				"keyword.other.this.cs"
+			],
+			"settings": {
+				"foreground": "#c878d2"
+			}
+		},
+		{
+			"name": "C# Namespace",
+			"scope": ["entity.name.type.namespace.cs"],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
+			"name": "C# Class",
+			"scope": ["entity.name.type.class.cs"],
+			"settings": {
+				"foreground": "#4ec9b0"
+			}
+		},
+		{
+			"name": "C# Field",
+			"scope": ["entity.name.variable.field.cs"],
+			"settings": {
+				"foreground": "#9cdcfe"
+			}
+		},
+		{
+			"name": "C# Interface",
+			"scope": ["entity.name.type.interface.cs"],
+			"settings": {
+				"foreground": "#a6e22e"
+			}
+		},
+		{
+			"name": "C# Interface",
+			"scope": ["entity.name.type.cs"],
+			"settings": {
+				"foreground": "#4ec9b0"
+			}
+		},
+		{
+			"name": "C# Interface",
+			"scope": ["entity.name.function.cs"],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
+			"name": "C# Punctuation",
+			"scope": [
+				"punctuation.parenthesis.open.cs",
+				"punctuation.parenthesis.close.cs",
+				"punctuation.definition.typeparameters.begin.cs",
+				"punctuation.definition.typeparameters.end.cs",
+				"punctuation.curlybrace.open.cs",
+				"punctuation.curlybrace.close.cs"
+			],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
 			"name": "HTML text",
 			"scope": "text.html",
 			"settings": {
@@ -443,6 +513,13 @@
 			}
 		},
 		{
+			"name": "CSS ID",
+			"scope": "entity.other.attribute-name.id",
+			"settings": {
+				"foreground": "#52BCCA"
+			}
+		},
+		{
 			"name": "Meta Class",
 			"scope": ["meta.class"],
 			"settings": {
@@ -520,11 +597,10 @@
 			}
 		},
 		{
-			"name": "Invalid Deprecated",
-			"scope": ["invalid.deprecated"],
+			"name": "Invalid deprecated",
+			"scope": "invalid.deprecated",
 			"settings": {
-				"foreground": "#523D14",
-				"background": "#E0C285"
+				"foreground": "#AA94D1"
 			}
 		},
 		{
@@ -1563,13 +1639,6 @@
 			"scope": "punctuation.separator.parameters.python",
 			"settings": {
 				"foreground": "#ABB2BF"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] CSharp Fields",
-			"scope": "entity.name.variable.field.cs",
-			"settings": {
-				"foreground": "#E06C75"
 			}
 		},
 		{
