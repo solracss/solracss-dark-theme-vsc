@@ -233,7 +233,7 @@
 			"name": "Keyword Control",
 			"scope": ["keyword.control"],
 			"settings": {
-				"foreground": "#C678DD"
+				"foreground": "#BB9AF7"
 			}
 		},
 		{
@@ -261,7 +261,7 @@
 			"name": "Storage",
 			"scope": ["storage"],
 			"settings": {
-				"foreground": "#C678DD"
+				"foreground": "#BB9AF7"
 			}
 		},
 		{
@@ -304,6 +304,13 @@
 			"scope": ["constant.numeric"],
 			"settings": {
 				"foreground": "#D19A66"
+			}
+		},
+		{
+			"name": "Constant Boolean",
+			"scope": ["constant.language.boolean.false.js", "constant.language.boolean.true.js"],
+			"settings": {
+				"foreground": "#C678DD"
 			}
 		},
 		{
@@ -462,11 +469,55 @@
 				"foreground": "#61AFEF"
 			}
 		},
+		// {
+		// 	"name": "Entity Name Function",
+		// 	"scope": ["entity.name.function"],
+		// 	"settings": {
+		// 		"foreground": "#61AFEF"
+		// 	}
+		// },
 		{
-			"name": "Entity Name Function",
-			"scope": ["entity.name.function"],
+			"name": "Methods",
+			"scope": [
+				"meta.class-method.js entity.name.function.js",
+				"entity.name.method.js",
+				"variable.function.constructor",
+				"keyword.other.special-method",
+				"storage.type.cs"
+			],
 			"settings": {
-				"foreground": "#61AFEF"
+				"foreground": "#7AA2F7"
+			}
+		},
+		{
+			"name": "Keyword Operator Logical, Arrow, Ternary, Comparison",
+			"scope": [
+				"keyword.operator.logical",
+				"storage.type.function",
+				"keyword.operator.bitwise",
+				"keyword.operator.ternary",
+				"keyword.operator.comparison",
+				"keyword.operator.relational",
+				"keyword.operator.or.regexp"
+			],
+			"settings": {
+				"foreground": "#bb9af7"
+			}
+		},
+		{
+			"name": "Function Definition",
+			"scope": [
+				"entity.name.function",
+				"variable.other.enummember",
+				"meta.function-call",
+				"meta.function-call entity.name.function",
+				"variable.function",
+				"meta.definition.method entity.name.function",
+				"meta.object-literal entity.name.function"
+			],
+			"settings": {
+				// "foreground": "#7AA2F7"
+				"foreground": "#C1CFF1"
 			}
 		},
 		{
@@ -503,6 +554,24 @@
 			"scope": ["entity.other.attribute-name.class", "meta.at-rule.mixin.scss entity.name.function.scss"],
 			"settings": {
 				"foreground": "#9ece6a"
+			}
+		},
+		{
+			"name": "SCSS Mixins, Extends, Include Keyword",
+			"scope": [
+				"keyword.control.at-rule.include punctuation.definition.keyword",
+				"keyword.control.at-rule.mixin punctuation.definition.keyword",
+				"meta.at-rule.include keyword.control.at-rule.include",
+				"keyword.control.at-rule.extend punctuation.definition.keyword",
+				"meta.at-rule.extend keyword.control.at-rule.extend",
+				"entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
+				"meta.at-rule.media keyword.control.at-rule.media",
+				"meta.at-rule.mixin keyword.control.at-rule.mixin",
+				"meta.at-rule.function keyword.control.at-rule.function",
+				"keyword.control punctuation.definition.keyword"
+			],
+			"settings": {
+				"foreground": "#C678DD"
 			}
 		},
 		{
@@ -1186,7 +1255,7 @@
 				"meta.template.expression.ts punctuation.definition"
 			],
 			"settings": {
-				"foreground": "#BE5046"
+				"foreground": "#98C379"
 			}
 		},
 		{
