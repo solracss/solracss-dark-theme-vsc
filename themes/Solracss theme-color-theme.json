@@ -261,12 +261,13 @@
 			"name": "Storage",
 			"scope": ["storage"],
 			"settings": {
-				"foreground": "#BB9AF7"
+				"foreground": "#C678DD"
+				// "foreground": "#BB9AF7"
 			}
 		},
 		{
 			"name": "Storage Type Annotation,storage Type Primitive",
-			"scope": ["storage.type.annotation", "storage.type.primitive"],
+			"scope": ["storage.type.annotation", "storage.type.primitive", "storage.type.function"],
 			"settings": {
 				"foreground": "#C678DD"
 			}
@@ -493,7 +494,7 @@
 			"name": "Keyword Operator Logical, Arrow, Ternary, Comparison",
 			"scope": [
 				"keyword.operator.logical",
-				"storage.type.function",
+
 				"keyword.operator.bitwise",
 				"keyword.operator.ternary",
 				"keyword.operator.comparison",
@@ -501,7 +502,7 @@
 				"keyword.operator.or.regexp"
 			],
 			"settings": {
-				"foreground": "#bb9af7"
+				"foreground": "#67cdcc"
 			}
 		},
 		{
@@ -517,7 +518,22 @@
 			],
 			"settings": {
 				// "foreground": "#7AA2F7"
+				// "foreground": "#D19A66"
 				"foreground": "#C1CFF1"
+			}
+		},
+		{
+			"name": "Methods",
+			"scope": [
+				"meta.class-method.js",
+				"entity.name.function.js",
+				"entity.name.method.js",
+				"variable.function.constructor",
+				"keyword.other.special-method",
+				"storage.type.cs"
+			],
+			"settings": {
+				"foreground": "#D19A66"
 			}
 		},
 		{
@@ -1295,7 +1311,7 @@
 			"name": "[VSCODE-CUSTOM] JS/TS Variable Property",
 			"scope": ["support.variable.property.js", "support.variable.property.ts", "support.variable.property.tsx"],
 			"settings": {
-				"foreground": "#9cdcfe"
+				"foreground": "#ABB2BF"
 			}
 		},
 		{
@@ -1458,7 +1474,8 @@
 				"variable.other.constant.tsx"
 			],
 			"settings": {
-				"foreground": "#D19A66"
+				// "foreground": "#f8c555"
+				"foreground": "#ABB2BF"
 			}
 		},
 		{
