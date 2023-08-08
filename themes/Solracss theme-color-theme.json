@@ -27,9 +27,9 @@
 		"editor.foreground": "#ABB2BF",
 		"editor.lineHighlightBackground": "#99BBFF0A",
 		"editor.selectionBackground": "#3E4451",
-		"editorCursor.foreground": "#528BFF",
+		// "editorCursor.foreground": "#528BFF",
+		"editorCursor.foreground": "#c0caf5",
 		"editor.findMatchHighlightBackground": "#528BFF3D",
-		"editorGroup.background": "#21252B",
 		"editorGroup.border": "#181A1F",
 		"editorGroupHeader.tabsBackground": "#21252B",
 		"editorIndentGuide.background": "#ABB2BF26",
@@ -54,7 +54,6 @@
 		"list.highlightForeground": "#D7DAE0",
 		"list.inactiveSelectionBackground": "#2C313A",
 		"list.inactiveSelectionForeground": "#D7DAE0",
-		"notification.background": "#21252B",
 		"pickerGroup.border": "#528BFF",
 		"scrollbarSlider.background": "#4E566680",
 		"scrollbarSlider.activeBackground": "#747D9180",
@@ -84,6 +83,12 @@
 		"peekViewTitle.background": "#1B1D23",
 		"peekViewEditor.background": "#1B1D23"
 	},
+	"semanticTokenColors": {
+		"variable": {
+			// "foreground": "#c0caf5"
+			"foreground": "#ABB2BF"
+		}
+	},
 	"tokenColors": [
 		{
 			"name": "Operator, Misc",
@@ -112,7 +117,29 @@
 				"meta.at-rule.function variable.parameter.url"
 			],
 			"settings": {
-				"foreground": "#52bcca"
+				// "foreground": "#52bcca"
+				"foreground": "#98C379"
+			}
+		},
+		{
+			"name": "Variable punctuation",
+			"scope": "variable.other punctuation.definition.variable",
+			"settings": {
+				"foreground": "#c0caf5"
+			}
+		},
+		{
+			"name": "Variables",
+			"scope": [
+				"variable",
+				"support.variable",
+				"string constant.other.placeholder",
+				"variable.parameter.handlebars",
+				"variable.other.object"
+			],
+			"settings": {
+				// "foreground": "#c0caf5"
+				"foreground": "#a5accc"
 			}
 		},
 		{
@@ -197,7 +224,7 @@
 			"name": "Comment",
 			"scope": ["comment"],
 			"settings": {
-				"foreground": "#5C6370",
+				"foreground": "#838994",
 				"fontStyle": "italic"
 			}
 		},
@@ -205,7 +232,7 @@
 			"name": "Comment Markup Link",
 			"scope": ["comment markup.link"],
 			"settings": {
-				"foreground": "#5C6370"
+				"foreground": "#838994"
 			}
 		},
 		{
@@ -233,7 +260,7 @@
 			"name": "Keyword Control",
 			"scope": ["keyword.control"],
 			"settings": {
-				"foreground": "#BB9AF7"
+				"foreground": "#C678DD"
 			}
 		},
 		{
@@ -329,10 +356,18 @@
 			}
 		},
 		{
-			"name": "Variable",
-			"scope": ["variable"],
+			"name": "Object Property",
+			"scope": [
+				"variable.other.property",
+				"support.variable.property",
+				"variable.other.object.property",
+				"support.variable.property.dom",
+				"meta.function-call variable.other.object.property",
+				"variable.other.object.property.cs"
+			],
 			"settings": {
-				"foreground": ""
+				// "foreground": "#D19A66"
+				"foreground": "#5db0d7"
 			}
 		},
 		{
@@ -477,19 +512,7 @@
 		// 		"foreground": "#61AFEF"
 		// 	}
 		// },
-		{
-			"name": "Methods",
-			"scope": [
-				"meta.class-method.js entity.name.function.js",
-				"entity.name.method.js",
-				"variable.function.constructor",
-				"keyword.other.special-method",
-				"storage.type.cs"
-			],
-			"settings": {
-				"foreground": "#7AA2F7"
-			}
-		},
+
 		{
 			"name": "Keyword Operator Logical, Arrow, Ternary, Comparison",
 			"scope": [
@@ -533,7 +556,9 @@
 				"storage.type.cs"
 			],
 			"settings": {
-				"foreground": "#D19A66"
+				"foreground": "#5db0d7"
+				// "foreground": "#D19A66"
+				// "foreground": "#7AA2F7"
 			}
 		},
 		{
@@ -594,6 +619,7 @@
 			"name": "Entity Other Attribute Name Id",
 			"scope": ["entity.other.attribute-name.id"],
 			"settings": {
+				// "foreground": "#FC7B7B"
 				"foreground": "#61AFEF"
 			}
 		},
@@ -601,7 +627,7 @@
 			"name": "CSS ID",
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
-				"foreground": "#52BCCA"
+				"foreground": "#FC7B7B"
 			}
 		},
 		{
@@ -667,13 +693,13 @@
 				"foreground": "#ba3c97"
 			}
 		},
-		{
-			"name": "Underline",
-			"scope": ["underline"],
-			"settings": {
-				"text-decoration": "underline"
-			}
-		},
+		// {
+		// 	"name": "Underline",
+		// 	"scope": ["underline"],
+		// 	"settings": {
+		// 		"text-decoration": "underline"
+		// 	}
+		// },
 		{
 			"name": "None",
 			"scope": ["none"],
@@ -688,14 +714,14 @@
 				"foreground": "#AA94D1"
 			}
 		},
-		{
-			"name": "Invalid Illegal",
-			"scope": ["invalid.illegal"],
-			"settings": {
-				"foreground": "white",
-				"background": "#E05252"
-			}
-		},
+		// {
+		// 	"name": "Invalid Illegal",
+		// 	"scope": ["invalid.illegal"],
+		// 	"settings": {
+		// 		// "foreground": "white",
+		// 		"background": "#E05252"
+		// 	}
+		// },
 		{
 			"name": "Markup Bold",
 			"scope": ["markup.bold"],
@@ -889,13 +915,13 @@
 				"foreground": "#828997"
 			}
 		},
-		{
-			"name": "Source Gfm Markup",
-			"scope": ["source.gfm markup"],
-			"settings": {
-				"-webkit-font-smoothing": "auto"
-			}
-		},
+		// {
+		// 	"name": "Source Gfm Markup",
+		// 	"scope": ["source.gfm markup"],
+		// 	"settings": {
+		// 		"-webkit-font-smoothing": "auto"
+		// 	}
+		// },
 		{
 			"name": "Source Gfm Link Entity",
 			"scope": ["source.gfm link entity"],
@@ -1101,13 +1127,13 @@
 				"foreground": "#ABB2BF"
 			}
 		},
-		{
-			"name": "Source Ruby Constant Other Symbol > Punctuation",
-			"scope": ["source.ruby constant.other.symbol > punctuation"],
-			"settings": {
-				"foreground": "inherit"
-			}
-		},
+		// {
+		// 	"name": "Source Ruby Constant Other Symbol > Punctuation",
+		// 	"scope": ["source.ruby constant.other.symbol > punctuation"],
+		// 	"settings": {
+		// 		"foreground": "inherit"
+		// 	}
+		// },
 		{
 			"name": "Source Php Class Bracket",
 			"scope": ["source.php class.bracket"],
@@ -1318,7 +1344,20 @@
 			"name": "[VSCODE-CUSTOM] JS/TS Default Keyword",
 			"scope": ["keyword.control.default.js", "keyword.control.default.ts", "keyword.control.default.tsx"],
 			"settings": {
-				"foreground": "#E06C75"
+				"foreground": "#C678DD"
+			}
+		},
+		{
+			"name": "Import, Export, From, Default",
+			"scope": [
+				"keyword.control.import",
+				"keyword.control.export",
+				"keyword.control.from",
+				"keyword.control.default",
+				"meta.import keyword.other"
+			],
+			"settings": {
+				"foreground": "#C678DD"
 			}
 		},
 		{
@@ -1462,7 +1501,7 @@
 				"variable.other.readwrite.alias.tsx"
 			],
 			"settings": {
-				"foreground": "#E06C75"
+				"foreground": "#5DB0D7"
 			}
 		},
 		{
@@ -1485,7 +1524,7 @@
 				"meta.export.default.ts variable.other.readwrite.ts"
 			],
 			"settings": {
-				"foreground": "#E06C75"
+				"foreground": "#C678DD"
 			}
 		},
 		{
@@ -1594,7 +1633,7 @@
 				"support.type.object.module.tsx"
 			],
 			"settings": {
-				"foreground": "#E06C75"
+				"foreground": "#C678DD"
 			}
 		},
 		{
@@ -1850,7 +1889,7 @@
 			"name": "[VSCODE-CUSTOM] Sass Punctuation for key-value",
 			"scope": "punctuation.separator.key-value.scss",
 			"settings": {
-				"foreground": "#E06C75"
+				"foreground": "#ABB2BF"
 			}
 		},
 		{
