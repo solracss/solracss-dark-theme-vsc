@@ -494,8 +494,8 @@
 			"name": "Punctuation Definition Italic",
 			"scope": ["punctuation.definition.italic"],
 			"settings": {
-				"foreground": "#C678DD",
-				"fontStyle": "italic"
+				"foreground": "#C678DD"
+				// "fontStyle": "italic"
 			}
 		},
 		{
@@ -589,7 +589,7 @@
 			"scope": "variable.other.object.js",
 			"settings": {
 				// "foreground": "#d6deeb",
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 			}
 		},
 		// {
@@ -610,7 +610,7 @@
 			],
 			"settings": {
 				// "foreground": "#00bff9",
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 			}
 		},
 		{
@@ -618,7 +618,7 @@
 			"scope": ["keyword.operator"],
 			"settings": {
 				// "foreground": "#00bff9",
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 			}
 		},
 		{
@@ -632,14 +632,14 @@
 			],
 			"settings": {
 				// "foreground": "#c792ea",
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 			}
 		},
 		{
 			"name": "Function name",
 			"scope": "entity.name.function",
 			"settings": {
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 				// "foreground": "#87aff4"
 			}
 		},
@@ -647,7 +647,7 @@
 			"name": "Tag attribute",
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 				// "foreground": "#f7ecb5"
 			}
 		},
@@ -655,7 +655,7 @@
 			"name": "Meta - Decorator",
 			"scope": ["punctuation.decorator"],
 			"settings": {
-				"fontStyle": "italic"
+				// "fontStyle": "italic"
 				// "foreground": "#f7ecb5"
 			}
 		},
@@ -902,8 +902,8 @@
 			"name": "Markup Italic",
 			"scope": ["markup.italic"],
 			"settings": {
-				"foreground": "#C678DD",
-				"fontStyle": "italic"
+				"foreground": "#C678DD"
+				// "fontStyle": "italic"
 			}
 		},
 		{
@@ -1018,8 +1018,8 @@
 			"name": "Source Elixir Parameter Variable Function",
 			"scope": ["source.elixir parameter.variable.function"],
 			"settings": {
-				"foreground": "#D19A66",
-				"fontStyle": "italic"
+				"foreground": "#D19A66"
+				// "fontStyle": "italic"
 			}
 		},
 		{
