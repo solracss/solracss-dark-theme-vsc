@@ -104,13 +104,97 @@
 		"gitDecoration.stageDeletedResourceForeground": "#914c54",
 		"gitDecoration.stageModifiedResourceForeground": "#6183bb"
 	},
+	"semanticHighlighting": true,
 	"semanticTokenColors": {
-		"variable": {
-			// "foreground": "#c0caf5"
-			"foreground": "#ABB2BF"
-		}
+		"newOperator": "#d4d4d4",
+		"stringLiteral": "#ce9178",
+		"customLiteral": "#D4D4D4",
+		"numberLiteral": "#b5cea8"
 	},
 	"tokenColors": [
+		{
+			"name": "Function declarations",
+			"scope": [
+				"entity.name.function",
+				"support.function",
+				"support.constant.handlebars",
+				"source.powershell variable.other.member",
+				"entity.name.operator.custom-literal" // See https://en.cppreference.com/w/cpp/language/user_literal
+			],
+			"settings": {
+				"foreground": "#C1CFF1"
+			}
+		},
+		{
+			"name": "Function Definition",
+			"scope": [
+				"entity.name.function",
+				"variable.other.enummember",
+				"meta.function-call",
+				"meta.function-call entity.name.function",
+				"variable.function",
+				"meta.definition.method entity.name.function",
+				"meta.object-literal entity.name.function"
+			],
+			"settings": {
+				"foreground": "#C1CFF1"
+			}
+		},
+		{
+			"name": "Types declaration and references",
+			"scope": [
+				"support.class",
+				"support.type",
+				"entity.name.type",
+				"entity.name.namespace",
+				"entity.other.attribute",
+				"entity.name.scope-resolution",
+				"entity.name.class",
+				"storage.type.numeric.go",
+				"storage.type.byte.go",
+				"storage.type.boolean.go",
+				"storage.type.string.go",
+				"storage.type.uintptr.go",
+				"storage.type.error.go",
+				"storage.type.rune.go",
+				"storage.type.cs",
+				"storage.type.generic.cs",
+				"storage.type.modifier.cs",
+				"storage.type.variable.cs",
+				"storage.type.annotation.java",
+				"storage.type.generic.java",
+				"storage.type.java",
+				"storage.type.object.array.java",
+				"storage.type.primitive.array.java",
+				"storage.type.primitive.java",
+				"storage.type.token.java",
+				"storage.type.groovy",
+				"storage.type.annotation.groovy",
+				"storage.type.parameters.groovy",
+				"storage.type.generic.groovy",
+				"storage.type.object.array.groovy",
+				"storage.type.primitive.array.groovy",
+				"storage.type.primitive.groovy"
+			],
+			"settings": {
+				"foreground": "#4EC9B0"
+			}
+		},
+		{
+			"name": "Types declaration and references, TS grammar specific",
+			"scope": [
+				"meta.type.cast.expr",
+				"meta.type.new.expr",
+				"support.constant.math",
+				"support.constant.dom",
+				"support.constant.json",
+				"entity.other.inherited-class",
+				"punctuation.separator.namespace.ruby"
+			],
+			"settings": {
+				"foreground": "#4EC9B0"
+			}
+		},
 		{
 			"name": "Operator, Misc",
 			"scope": [
@@ -256,20 +340,22 @@
 				"foreground": "#838994"
 			}
 		},
-		{
-			"name": "Entity Name Type",
-			"scope": ["entity.name.type"],
-			"settings": {
-				"foreground": "#E5C07B"
-			}
-		},
-		{
-			"name": "Entity Other Inherited Class",
-			"scope": ["entity.other.inherited-class"],
-			"settings": {
-				"foreground": "#E5C07B"
-			}
-		},
+		// {
+		// 	"name": "Entity Name Type",
+		// 	"scope": ["entity.name.type"],
+		// 	"settings": {
+		// 		// "foreground": "#E5C07B"
+		// 		"foreground": "#4EC9B0"
+		// 	}
+		// },
+		// {
+		// 	"name": "Entity Other Inherited Class",
+		// 	"scope": ["entity.other.inherited-class"],
+		// 	"settings": {
+		// 		// "foreground": "#E5C07B"
+		// 		"foreground": "#4EC9B0"
+		// 	}
+		// },
 		{
 			"name": "Keyword",
 			"scope": ["keyword"],
@@ -299,13 +385,13 @@
 				"foreground": "#61AFEF"
 			}
 		},
-		{
-			"name": "Keyword Other Unit",
-			"scope": ["keyword.other.unit"],
-			"settings": {
-				"foreground": "#D19A66"
-			}
-		},
+		// {
+		// 	"name": "Keyword Other Unit",
+		// 	"scope": ["keyword.other.unit"],
+		// 	"settings": {
+		// 		"foreground": "#D19A66"
+		// 	}
+		// },
 		{
 			"name": "Storage",
 			"scope": ["storage"],
@@ -328,20 +414,20 @@
 				"foreground": "#ABB2BF"
 			}
 		},
-		{
-			"name": "Constant",
-			"scope": ["constant"],
-			"settings": {
-				"foreground": "#D19A66"
-			}
-		},
-		{
-			"name": "Constant Variable",
-			"scope": ["constant.variable"],
-			"settings": {
-				"foreground": "#D19A66"
-			}
-		},
+		// {
+		// 	"name": "Constant",
+		// 	"scope": ["constant"],
+		// 	"settings": {
+		// 		"foreground": "#D19A66"
+		// 	}
+		// },
+		// {
+		// 	"name": "Constant Variable",
+		// 	"scope": ["constant.variable"],
+		// 	"settings": {
+		// 		"foreground": "#ABB2BF"
+		// 	}
+		// },
 		{
 			"name": "Constant Character Escape",
 			"scope": ["constant.character.escape"],
@@ -353,7 +439,7 @@
 			"name": "Constant Numeric",
 			"scope": ["constant.numeric"],
 			"settings": {
-				"foreground": "#D19A66"
+				"foreground": "#ABB2BF"
 			}
 		},
 		{
@@ -392,7 +478,8 @@
 			],
 			"settings": {
 				// "foreground": "#D19A66"
-				"foreground": "#5db0d7"
+				// "foreground": "#5db0d7"
+				"foreground": "#93cff1"
 			}
 		},
 		{
@@ -413,7 +500,8 @@
 			"name": "String",
 			"scope": ["string"],
 			"settings": {
-				"foreground": "#98C379"
+				"foreground": "#89b369"
+				// "foreground": "#98C379"
 			}
 		},
 		{
@@ -510,7 +598,8 @@
 			"name": "Support Class",
 			"scope": ["support.class"],
 			"settings": {
-				"foreground": "#E5C07B"
+				"foreground": "#4EC9B0"
+				// "foreground": "#E5C07B"
 			}
 		},
 		{
@@ -555,23 +644,6 @@
 			],
 			"settings": {
 				"foreground": "#67cdcc"
-			}
-		},
-		{
-			"name": "Function Definition",
-			"scope": [
-				"entity.name.function",
-				"variable.other.enummember",
-				"meta.function-call",
-				"meta.function-call entity.name.function",
-				"variable.function",
-				"meta.definition.method entity.name.function",
-				"meta.object-literal entity.name.function"
-			],
-			"settings": {
-				// "foreground": "#7AA2F7"
-				// "foreground": "#D19A66"
-				"foreground": "#C1CFF1"
 			}
 		},
 		{
@@ -620,14 +692,14 @@
 				// "fontStyle": "italic"
 			}
 		},
-		{
-			"name": "Function name",
-			"scope": "entity.name.function",
-			"settings": {
-				// "fontStyle": "italic"
-				// "foreground": "#87aff4"
-			}
-		},
+		// {
+		// 	"name": "Function name",
+		// 	"scope": "entity.name.function",
+		// 	"settings": {
+		// 		// "fontStyle": "italic"
+		// 		// "foreground": "#87aff4"
+		// 	}
+		// },
 		{
 			"name": "Tag attribute",
 			"scope": "entity.other.attribute-name",
@@ -684,13 +756,14 @@
 				// "foreground": "#7AA2F7"
 			}
 		},
-		{
-			"name": "Entity Name Class,entity Name Type Class",
-			"scope": ["entity.name.class", "entity.name.type.class"],
-			"settings": {
-				"foreground": "#E5C07B"
-			}
-		},
+		// {
+		// 	"name": "Entity Name Class,entity Name Type Class",
+		// 	"scope": ["entity.name.class", "entity.name.type.class"],
+		// 	"settings": {
+		// 		// "foreground": "#E5C07B"
+		// 		"foreground": "#4EC9B0"
+		// 	}
+		// },
 		{
 			"name": "Entity Name Section",
 			"scope": ["entity.name.section"],
@@ -773,7 +846,8 @@
 			"name": "Meta Class",
 			"scope": ["meta.class"],
 			"settings": {
-				"foreground": "#E5C07B"
+				// "foreground": "#E5C07B"
+				"foreground": "#4EC9B0"
 			}
 		},
 		{
@@ -1602,17 +1676,17 @@
 				"foreground": "#E06C75"
 			}
 		},
-		{
-			"name": "[VSCODE-CUSTOM] JS/TS Support Variables",
-			"scope": [
-				"variable.other.constant.property.js",
-				"variable.other.constant.property.ts",
-				"variable.other.constant.property.tsx"
-			],
-			"settings": {
-				"foreground": "#D19A66"
-			}
-		},
+		// {
+		// 	"name": "[VSCODE-CUSTOM] JS/TS Support Variables",
+		// 	"scope": [
+		// 		"variable.other.constant.property.js",
+		// 		"variable.other.constant.property.ts",
+		// 		"variable.other.constant.property.tsx"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#D19A66"
+		// 	}
+		// },
 		{
 			"name": "[VSCODE-CUSTOM] JS/TS Keyword New",
 			"scope": ["keyword.operator.new.ts", "keyword.operator.new.j", "keyword.operator.new.tsx"],
@@ -1818,18 +1892,18 @@
 				"foreground": "#56B6C2"
 			}
 		},
-		{
-			"name": "[VSCODE-CUSTOM] JS/TS Object Constants",
-			"scope": [
-				"variable.other.constant.object.js",
-				"variable.other.constant.object.jsx",
-				"variable.other.constant.object.ts",
-				"variable.other.constant.object.tsx"
-			],
-			"settings": {
-				"foreground": "#D19A66"
-			}
-		},
+		// {
+		// 	"name": "[VSCODE-CUSTOM] JS/TS Object Constants",
+		// 	"scope": [
+		// 		"variable.other.constant.object.js",
+		// 		"variable.other.constant.object.jsx",
+		// 		"variable.other.constant.object.ts",
+		// 		"variable.other.constant.object.tsx"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#D19A66"
+		// 	}
+		// },
 		{
 			"name": "[VSCODE-CUSTOM] JS/TS Properties Keyword",
 			"scope": [
@@ -2286,5 +2360,6 @@
 			}
 		}
 	],
+
 	"uuid": "ed341408-7f03-11ed-a1eb-0242ac120002"
 }
